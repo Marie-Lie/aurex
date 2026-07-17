@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav .flex.items-center.gap-6 {
+    gap: 0.5rem;
+  }
+  nav .flex.items-center.gap-6 > div:first-child {
+    display: none;
+  }
+  .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+  .text-6xl, .text-7xl {
+    font-size: 2.5rem !important;
+  }
+  .px-16, .px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .py-24, .py-20 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .lg\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .min-h-screen {
+    min-height: auto !important;
+  }
+  [class*="fade-in"] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
